@@ -41,4 +41,6 @@ def index():
     return render_template('index.html', table_data=table_data, left_headers=left_headers, right_headers=right_headers)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    print("Flask app is running on http://0.0.0.0:5000 (Accessible on Local Network)")
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
